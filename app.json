@@ -1,0 +1,76 @@
+{
+  "expo": {
+    "name": "BoomBet Tips",
+    "slug": "Boombet-tips",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ],
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-6804638073300474~5046784258"
+      },
+      "infoPlist": {
+        
+        "SKAdNetworkItems": [
+          {
+            "SKAdNetworkIdentifier": "cstr6suwn9.skadnetwork"
+          }
+        ]
+      },
+      "bundleIdentifier": "com.getintellisoft.boombet",
+      "versionCode": 3,
+      "buildNumber": "23.0"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "config": {
+        "googleMobileAdsAppId": "ca-app-pub-6804638073300474~3008327165"
+      },
+      "permissions": [
+        "CAMERA",
+        "USE_FINGERPRINT",
+        "READ_EXTERNAL_STORAGE",
+        "USE_BIOMETRIC"
+      ],
+      "package": "com.getintellisoft.boombet",
+      "versionCode": 21
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7461cf72-4eee-431b-bed8-48ebf8b0a2e1"
+      }
+    }
+  },
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-6804638073300474~3008327165",
+    "ios_app_id": "ca-app-pub-6804638073300474~3008327165"
+   }
+}
