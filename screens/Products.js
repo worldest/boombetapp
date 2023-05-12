@@ -13,11 +13,9 @@ import AntDesign from 'react-native-vector-icons/AntDesign';
 import FontAwesome from 'react-native-vector-icons/FontAwesome'
 import COLORS from '../constants/COLORS';
 import {
-  AdMobBanner,
-  AdMobInterstitial,
-  PublisherBanner,
-  AdMobRewarded,
-  setTestDeviceIDAsync,
+  BannerAd,
+  // BannerAd,
+  // AdMobInterstitial
 } from 'react-native-google-mobile-ads';
 import {Paystack} from "react-native-paystack-webview";
 import * as WebBrowser from 'expo-web-browser';
@@ -222,12 +220,12 @@ const refresh = () => {
 
   })
 }
-const showInterstitial = () => {
-  AdMobInterstitial.setAdUnitID("ca-app-pub-6804638073300474/8721620590");
-  AdMobInterstitial.requestAdAsync().then(() => {
-    AdMobInterstitial.showAdAsync().catch((e) => console.log(e));
-  });
-}
+// const showInterstitial = () => {
+//   AdMobInterstitial.setAdUnitID("ca-app-pub-6804638073300474/8721620590");
+//   AdMobInterstitial.requestAdAsync().then(() => {
+//     AdMobInterstitial.showAdAsync().catch((e) => console.log(e));
+//   });
+// }
   return (
     <View style={styles.view}>
       
@@ -628,7 +626,7 @@ const showInterstitial = () => {
           </View>
           </ScrollView>  
         </Modal>
-        <AdMobBanner
+        <BannerAd
           bannerSize="smartBanner"
 
           style={{alignSelf: "center", width: "100%", position: "absolute", bottom: 0}}
